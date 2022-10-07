@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Urbanist', sans-serif;
+	outline: none;
+}
+body{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://lolstatic-a.akamaihd.net/rso-login-page/2.11.5/assets/riot_desktop_background_1x.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+form{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+section{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+video#back_video{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+section > div{
+	position: absolute;
+	display: flex;
+	width: min-content;
+	max-width: 95%;
+	height: min-content;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	backdrop-filter: blur(5px);
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	padding: 25px;
+	box-shadow: 5px 5px 30px rgb(0 0 0 / 70%);
+}
+section div h1{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 2rem;
+	text-align: left;
+	text-align-last: left;
+	white-space: nowrap;
+	margin: 0 0 15px 0;
+}
+.container_entradas{
+	position: relative;
+	display: flex;
+	width: min-content;
+	height: min-content;
+	flex-wrap: wrap;
+}
+section div p{
+	position: absolute;
+	padding: 25px 0 0 10px;
+	top: 0;
+	left: 0;
+	color: white;
+	transition: all .5s ease-in-out;
+}
+section div p:nth-child(2){
+	margin-top: 10px;
+}
+section div input{
+	position: relative;
+	display: flex;
+	width: 80%;
+	border: none;
+	margin: 10px 0 35px 0;
+	width: 300px;
+	height: 50px;
+	background-color: rgba(126, 126, 126, 0.3);
+	color: white;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+section div a{
+	color: inherit;
+	text-decoration: none;
+	color: white;
+	margin: 0 0 10px 0;
+}
+#btn_entrar{
+	position: relative;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	border: 2px solid rgba(255,255,255,0.2);
+	border-radius: 15px;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+	margin: 0 0 20px 0;
+	align-self: flex-end;
+	color:  rgba(255,255,255,0.2);
+	transition: all .5s ease-in-out;
+	background-color: transparent;
+	cursor: pointer;
+}
+#btn_entrar:hover{
+	color:  rgba(255,255,255,0.5);
+	border: 2px solid rgba(255,255,255,0.5);
+	transition: all .5s ease-in-out;
+}
+section div #social{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: min-content;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	white-space: nowrap;
+	background-color: transparent;
+	margin-top: 25px;
+}
+section div #social i{
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	color: white;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 50%;
+	align-items: center;
+	transition: all .5s ease-in-out;
+}
+section div #social i:hover{
+	background-color: rgba(0,0,0,0);
+	transition: all .5s ease-in-out;
+}
+section div #social i:nth-child(1):hover{
+	border: 1px solid #6441a5;
+	color: #6441a5;
+}
+section div #social i:nth-child(2):hover{
+	border: 1px solid #3f729b;
+	color: #3f729b;
+}
+
